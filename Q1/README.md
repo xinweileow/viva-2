@@ -62,15 +62,15 @@ After identifying all groups, the program performs a final pass through the `new
 ## Sample input and output
 
 ### Sample 1
-![Sample Input Output 1](Q1/sample-case/sample_input_output_(1).png)
+![Sample Input Output 1](sample-case/sample_input_output_(1).png)
 
 ### Sample 2
-![Sample Input Output 2](Q1/sample-case/sample_input_output_(2).png)
+![Sample Input Output 2](sample-case/sample_input_output_(2).png)
 
 ### Sample 3
-![Sample Input Output 3](Q1/sample-case/sample_input_output_(3).png)
+![Sample Input Output 3](sample-case/sample_input_output_(3).png)
 
 ---
 
 ## Source code
-See [Q1.java](Q1/Q1.java)
+See [Q1.java](Q1.java)

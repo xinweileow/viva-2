@@ -27,8 +27,6 @@ public class Q1 {
             }
         }
 
-
-
         String [] newWord = new String[newArraySize];
         int index = 0;
         for (int i = 0; i < n; i++) {
