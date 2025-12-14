@@ -53,6 +53,7 @@ public class Q3 {
         return false;
     }
 
+//This method checks every possible center, expands outward to find palindromes, and returns the longest palindrome substring.
     static String getLongestPalindrome(String s) {
         int n = s.length();
         int maxLen = 0;
@@ -70,9 +71,9 @@ public class Q3 {
         return s.substring(start, start + maxLen);
     }
 
+//This method expands from the center to both sides while characters match and returns the length of the longest palindrome found.
     static int expandPalindrome(String s, int left, int right) {
-        while (left >= 0 && right < s.length() &&
-                Character.toLowerCase(s.charAt(left)) == Character.toLowerCase(s.charAt(right))) {
+        while (left >= 0 && right < s.length() && Character.toLowerCase(s.charAt(left)) == Character.toLowerCase(s.charAt(right))) {
             left--;
             right++;
         }
