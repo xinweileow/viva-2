@@ -78,9 +78,10 @@ mirrorCount++;
         mirrorCount++;
     }
 }`
-*Adds the new mirror pair to the arrays and updates the count.
+* Adds the new mirror pair to the arrays and updates the count.
 
 **4. Check Mirror Pairs**
+
 `static boolean isMirror(char a, char b) {
     for (int i = 0; i < mirrorCount; i++) {
         if (mirrorLeft[i] == a && mirrorRight[i] == b) return true;
@@ -92,6 +93,7 @@ mirrorCount++;
 * Used later to detect mirrorable substrings.
 
 **5. Find Longest Palindrome**
+
 `for (int i = 0; i < n; i++) {
     int len1 = expandPalindrome(s, i, i);
     int len2 = expandPalindrome(s, i, i + 1);
@@ -141,6 +143,7 @@ Similar logic, but uses `isMirror` instead of equality:
 }`
 
 `expandMirror`:
+
 `static int expandMirror(String s, int left, int right) {
     while (left >= 0 && right < s.length() && isMirror(s.charAt(left), s.charAt(right))) {
         left--;
@@ -153,6 +156,7 @@ Similar logic, but uses `isMirror` instead of equality:
 * Returns the mirrorable substring length.
 
 **7. Output**
+
 `System.out.println("Longest Palindrome: " + getLongestPalindrome(input));
 System.out.println("Longest Mirrorable: " + getLongestMirrorWord(input));
 `
